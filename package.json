@@ -10,6 +10,14 @@
   ],
   "main": "dist/await-to-js.umd.js",
   "module": "dist/await-to-js.es5.js",
+  "exports": {
+    ".": {
+      "import": "./dist/await-to-js.es5.js",
+      "require": "./dist/await-to-js.umd.js",
+      "typings": "./dist/types/await-to-js.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "typings": "dist/types/await-to-js.d.ts",
   "homepage": "https://github.com/scopsy/await-to-js#readme",
   "files": [
